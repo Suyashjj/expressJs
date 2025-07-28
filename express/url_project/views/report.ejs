@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Report</title>
+</head>
+
+<body>
+    <!-- bringing header from header.ejs -->
+    <%- include('header') %>
+
+        <h1>Student Report</h1>
+        <ul>
+            <% students.forEach((student, index)=> { %>
+                <li>
+                    <strong>
+                        <%= index + 1 %>.
+                    </strong>
+                    Name: <%= student.name %>,
+                        Age: <%= student.age %>
+                </li>
+                <% }) %>
+        </ul>
+</body>
+
+</html>
