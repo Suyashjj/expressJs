@@ -1,16 +1,24 @@
 # 📝 Express.js Notes
 
-This repository contains my personal notes and code snippets while learning **Express.js** from scratch. It includes topics like basic routing, middleware, static files, form handling, MVC structure, and working with file streams.
+This repository contains my personal notes and hands-on practice while learning **Express.js** from [Thapa Technical](https://www.youtube.com/@ThapaTechnical) on YouTube.  
+It’s a mix of concepts, code snippets, and mini-projects I built to strengthen my understanding.
+
+---
+
+## 🙋‍♂️ Why This Repo?
+
+> I created this as a **learning-in-public** repo. While going through Thapa Technical’s tutorials, I made sure to write clean, organized code and keep track of what I understood.  
+> It helps me revise faster and may help others who are just starting out with Express.js.
 
 ---
 
 ## 📂 Folder Structure
 
-- `form-submission` – Handling HTML form data using Express
-- `mvc` – Organizing Express apps using the MVC (Model-View-Controller) pattern
-- `public` – Static files like HTML, CSS used in Express apps
-- `streams` – Reading and writing files using Node.js streams
-- `url_project` – A small project for URL shortening using Express
+- `form-submission` – Handling HTML form data using Express (`POST`, `req.body`)
+- `mvc` – Organizing Express apps using MVC (Model-View-Controller) pattern
+- `public` – Static files like HTML and CSS served using `express.static`
+- `streams` – Working with file streams (`fs.createReadStream`, `fs.createWriteStream`)
+- `url_project` – A mini-project using Express for basic URL shortening
 
 ---
 
@@ -18,20 +26,20 @@ This repository contains my personal notes and code snippets while learning **Ex
 
 - Setting up an Express server
 - Creating routes (`GET`, `POST`)
-- Serving static files using `express.static`
-- Handling form submissions (`req.body`, `express.urlencoded`)
-- Using middlewares
-- Organizing code using MVC architecture
-- Sending responses (`res.send`, `res.json`, `res.render`)
-- Reading/writing files with `fs` and `streams`
-- Using `import.meta.url` for file paths in ES Modules
+- Serving static files with `express.static`
+- Middleware usage and chaining
+- Parsing form data using `express.urlencoded`
+- File reading/writing with Node.js streams
+- MVC pattern in Express (separating routes, views, and logic)
+- Using `import.meta.url` and `path` with ES modules
+- Modularizing code for cleaner structure
 
 ---
 
-## 📦 How to Run
+## 📦 How to Run Any Folder
 
-Make sure you have **Node.js** and **Express.js** installed.  
-Run any app like this:
+Make sure you have **Node.js** and **Express** installed.  
+Navigate to the desired folder and run the app:
 
 ```bash
 cd <folder_name>
